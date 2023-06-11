@@ -22,6 +22,9 @@ int main(int argc, char *argv[])
     printf("The size of full_name (char[]): %ld\n", sizeof(full_name));
     printf("The number of chars: %ld\n", sizeof(full_name) / sizeof(char));
     printf("name=\"%s\" and full_name=\"%s\"\n", name, full_name);
+    printf("address of full_name: %p\n", &full_name);
+    printf("address of name: %p\n", &name);
+    printf("address of areas[]: %p\n", &areas);
 
     return 0;
 }
