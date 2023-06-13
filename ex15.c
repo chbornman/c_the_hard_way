@@ -4,13 +4,10 @@ int main(int argc, char *argv[])
 {
     //create two arrays
     int ages[] = { 23, 43, 12, 89, 2 };
-    char test[] = "caleb";
-    char *names[] = {
+    char *names = {
         "Alan", "Frank",
         "Mary", "John", "Lisa"
     };
-
-    printf("%s is the value of \"test\"\n", test);
 
     // safely get the size of ages
     int count = sizeof(ages) / sizeof(int);
@@ -39,8 +36,6 @@ int main(int argc, char *argv[])
     for (i = 0; i < count; i++) {
         printf("%s is %d years old again.\n", cur_name[i], cur_age[i]);
     };
-
-    printf("---\n");
 
     //fourth way, with pointer in a stupid complex way
     for (cur_name = names, cur_age = ages; 
